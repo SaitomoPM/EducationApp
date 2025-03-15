@@ -20,6 +20,11 @@ export default defineConfig({
     entries: ["src/main.tsx", "src/tempobook/**/*"],
     include: ["react-router-dom", "@remix-run/router", "@radix-ui/primitive"],
   },
+  build: {
+    rollupOptions: {
+      external: ["@radix-ui/primitive"],
+    },
+  },
   plugins: [
     react({
       plugins: conditionalPlugins,
