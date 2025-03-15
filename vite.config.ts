@@ -25,6 +25,7 @@ export default defineConfig({
       "@radix-ui/react-compose-refs",
       "@radix-ui/react-context",
       "@radix-ui/react-id",
+      "@radix-ui/react-use-controllable-state",
     ],
   },
   build: {
@@ -34,6 +35,7 @@ export default defineConfig({
         "@radix-ui/react-compose-refs",
         "@radix-ui/react-context",
         "@radix-ui/react-id",
+        "@radix-ui/react-use-controllable-state",
       ],
     },
   },
