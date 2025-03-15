@@ -18,7 +18,7 @@ export default defineConfig({
       : process.env.VITE_BASE_PATH || "/",
   optimizeDeps: {
     entries: ["src/main.tsx", "src/tempobook/**/*"],
-    include: ["react-router-dom", "@remix-run/router"],
+    include: ["react-router-dom", "@remix-run/router", "@radix-ui/primitive"],
   },
   plugins: [
     react({
