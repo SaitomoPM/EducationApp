@@ -24,6 +24,7 @@ export default defineConfig({
       "@radix-ui/primitive",
       "@radix-ui/react-compose-refs",
       "@radix-ui/react-context",
+      "@radix-ui/react-id",
     ],
   },
   build: {
@@ -32,6 +33,7 @@ export default defineConfig({
         "@radix-ui/primitive",
         "@radix-ui/react-compose-refs",
         "@radix-ui/react-context",
+        "@radix-ui/react-id",
       ],
     },
   },
