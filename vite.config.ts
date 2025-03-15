@@ -23,11 +23,16 @@ export default defineConfig({
       "@remix-run/router",
       "@radix-ui/primitive",
       "@radix-ui/react-compose-refs",
+      "@radix-ui/react-context",
     ],
   },
   build: {
     rollupOptions: {
-      external: ["@radix-ui/primitive", "@radix-ui/react-compose-refs"],
+      external: [
+        "@radix-ui/primitive",
+        "@radix-ui/react-compose-refs",
+        "@radix-ui/react-context",
+      ],
     },
   },
   plugins: [
