@@ -18,11 +18,16 @@ export default defineConfig({
       : process.env.VITE_BASE_PATH || "/",
   optimizeDeps: {
     entries: ["src/main.tsx", "src/tempobook/**/*"],
-    include: ["react-router-dom", "@remix-run/router", "@radix-ui/primitive"],
+    include: [
+      "react-router-dom",
+      "@remix-run/router",
+      "@radix-ui/primitive",
+      "@radix-ui/react-compose-refs",
+    ],
   },
   build: {
     rollupOptions: {
-      external: ["@radix-ui/primitive"],
+      external: ["@radix-ui/primitive", "@radix-ui/react-compose-refs"],
     },
   },
   plugins: [
